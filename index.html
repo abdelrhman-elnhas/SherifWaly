@@ -19,6 +19,8 @@
   <link rel="stylesheet" href="assets/Bootstrap/css/bootstrap.min.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="assets/FontAwesome/css/all.min.css">
+  <!-- Animate CSS-->
+  <link rel="stylesheet" href="./assets/Animate/css/animate.css">
   <!-- Stylesheet -->
   <link rel="stylesheet" href="main.css">
 </head>
@@ -71,7 +73,7 @@
         <div class="hero-img col-12 col-md-6">
           <img src="./images/hero.png" class="img-fluid" alt="">
         </div>
-        <div class="hero-content col-12 col-md-6">
+        <div class="hero-content col-12 col-md-6 wow slideInUp duration-1s">
           <p class="upper-text">Let's Learn</p>
           <p class="main-text">Biology</p>
           <p class="lower-text">Dr/ Sherif Waly</p>
@@ -84,10 +86,10 @@
     <section id="About">
       <div class="container pt-5">
         <div class="row justify-content-center  align-items-center">
-          <div class="about-img col-12 col-lg-6 d-flex justify-content-center">
+          <div class="about-img col-12 col-lg-6 d-flex justify-content-center wow slideInUp duration-1s">
             <img src="images/sherif.png" class="img-fluid w-75" alt="" />
           </div>
-          <div class="about-content col-12 col-lg-6 d-flex flex-column justify-content-center">
+          <div class="about-content col-12 col-lg-6 d-flex flex-column justify-content-center wow slideInUp duration-1s">
             <h2 class="about-name">دكتور/ شريف والي</h2>
             <p class="about-details">خريج كلية التربية قسم بيولوجي </p>
             <p class="about-details">حاصل على دبلوم خاص وماجستير ودكتوراة في التربية</p>
@@ -102,13 +104,13 @@
     <!-- Videos Section -->
     <section id="Videos">
       <div class="container mt-5 d-flex flex-column align-items-center mb-5 ">
-        <div class="title d-flex align-items-center mb-5">
+        <div class="title d-flex align-items-center mb-5 wow slideInUp duration-1s">
           <h3>الفيديوهات المجانية</h3>
           <img src="./images/dna-icon.png" alt="">
           <img src="./images/animal-cell.png" alt="">
         </div>
         <div class="row justify-content-center align-items-center mt-5 mb-5">
-          <div class="col-12 p-3 col-md-6 col-lg-3">
+          <div class="col-12 p-3 col-md-6 col-lg-3 wow slideInUp duration-1s">
             <div class="video">
               <img src="./images/bg.jpg" class="card-img-top" alt="...">
               <div class="card-body">
@@ -118,7 +120,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 p-3 col-md-6 col-lg-3">
+          <div class="col-12 p-3 col-md-6 col-lg-3 wow slideInUp duration-1s">
             <div class="video">
               <img src="./images/bg.jpg" class="card-img-top" alt="...">
               <div class="card-body">
@@ -128,7 +130,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 p-3 col-md-6 col-lg-3">
+          <div class="col-12 p-3 col-md-6 col-lg-3 wow slideInUp duration-1s">
             <div class="video">
               <img src="./images/bg.jpg" class="card-img-top" alt="...">
               <div class="card-body">
@@ -138,7 +140,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 p-3 col-md-6 col-lg-3">
+          <div class="col-12 p-3 col-md-6 col-lg-3 wow slideInUp duration-1s">
             <div class="video">
               <img src="./images/bg.jpg" class="card-img-top" alt="...">
               <div class="card-body">
@@ -155,12 +157,12 @@
     <!-- Articles Section -->
     <section id="Articles">
       <div class="container mt-5 d-flex flex-column align-items-center mb-5 ">
-        <div class="title d-flex align-items-center mb-5">
+        <div class="title d-flex align-items-center mb-5 wow slideInUp duration-1s">
           <h3>المقالات المجانية</h3>
           <img src="./images/dna-icon.png" alt="">
           <img src="./images/animal-cell.png" alt="">
         </div>
-        <div class="row justify-content-center align-items-center mb-5">
+        <div class="row justify-content-center align-items-center mb-5 wow slideInUp duration-1s">
           <div class="col-12 col-lg-6 p-3">
             <div class="article d-flex align-items-center justify-content-between">
               <div class="article-img">
@@ -255,5 +257,10 @@
   <script src="assets/Bootstrap/js/bootstrap.min.js"></script>
   <!-- FontAwesome Script File -->
   <script src="assets/FontAwesome/js/all.min.js"></script>
+  <!-- WOW JS -->
+  <script src="./assets/Animate/js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
 </body>
 </html>
