@@ -201,7 +201,7 @@ header ul li a:hover {
 .lower-text {
   margin-left: 3px;
   font-size: 20px;
-  color: var(--first-color-alt);
+  color: var(--first-alt-color);
   font-weight: 600;
   margin-top: -25px;
 }
