@@ -7,7 +7,7 @@
   --third-color: #ede5d3;
   --fourth-color: #f5f2ea;
   --font-main: "Lemonada", cursive;
-  --font-alt: "Oswald", sans-serif;
+  --font-alt: "Alexandria", sans-serif;
   --margin: 120px auto;
 }
 
@@ -170,14 +170,23 @@ header ul li a:hover {
 .hero-img > img {
   width: 42%;
   position: absolute;
-  right: 0px;
+  left: 0px;
   bottom: 0px;
+}
+
+.hero-content {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: auto;
 }
 
 .upper-text {
   margin-left: 3px;
-  margin-bottom: -20px;
-  color: var(--third-color);
+  margin-bottom: 0px;
+  color: var(--first-color);
   font-size: 2.5rem;
   text-transform: uppercase;
 }
@@ -186,24 +195,23 @@ header ul li a:hover {
   font-size: 5.9rem;
   font-weight: 800;
   text-transform: uppercase;
-  color: var(--third-color);
+  color: var(--first-color);
 }
 
 .lower-text {
   margin-left: 3px;
-  font-size: 30px;
-  color: var(--sec-color);
+  font-size: 20px;
+  color: var(--first-color-alt);
   font-weight: 600;
-  letter-spacing: 10px;
   margin-top: -25px;
 }
 
 .hero-btn {
   background-color: transparent;
-  border: 2px solid var(--third-color);
-  color: var(--third-color);
+  border: 2px solid var(--first-color);
+  color: var(--first-color);
   padding: 8px 15px;
-  font-size: 20px;
+  font-size: 14px;
   margin-left: 3px;
   position: relative;
   z-index: 2;
@@ -214,7 +222,7 @@ header ul li a:hover {
   position: absolute;
   width: 0%;
   height: 100%;
-  background-color: var(--third-color);
+  background-color: var(--first-color);
   left: 0;
   top: 0;
   transition: all 0.5s linear;
@@ -224,7 +232,7 @@ header ul li a:hover {
   -o-transition: all 0.5s linear;
 }
 .hero-btn:hover {
-  color: var(--first-color);
+  color: var(--third-color);
 }
 .hero-btn:hover::before {
   width: 100%;
@@ -234,9 +242,6 @@ header ul li a:hover {
 @media (max-width: 385px) {
   .main-text {
     font-size: 5rem;
-  }
-  .lower-text {
-    letter-spacing: 5px;
   }
   .hero-img > img {
     width: 70%;
